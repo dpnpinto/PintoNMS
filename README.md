@@ -43,4 +43,11 @@ Se pretendes utilizar soluções emrpesariais aconselho vivamente a utilizares e
 - sudo dnf install ansible (instalação do ansikble propriamente dito)
 Nota: Sript bash Install_Ansible.sh
 
+### Configuração do Ansible no Rocky Linux
+
+- No ficheiro  hosts localizado em /etc/ansible estão configurados os hosts
+  - Este ficheiro tem uma estrutura do top
+[group_name]
+alias ansible_ssh_host=your_server_ip 
+
 ... Continua
