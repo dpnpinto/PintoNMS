@@ -55,8 +55,8 @@ Este ficheiro tem uma estrutura do tipo
 alias ansible_ssh_host=your_server_ip 
 ~~~
 Exmplo de ficheiro /etc/ansible/hosts
-[servers]
 ~~~yaml
+[servers]
 host1 ansible_ssh_host=203.0.113.111
 host2 ansible_ssh_host=203.0.113.112
 host3 ansible_ssh_host=203.0.113.113
