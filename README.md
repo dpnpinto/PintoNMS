@@ -30,5 +30,13 @@ O Ansible foi desenvolvido em Pyton e utiliza uma linguagem declarativa simples 
 - Conecta-se via ssh (Secure Shell);
 - Permite gerir servidores e ativos de rede (basicamente toda a infraestrutura);
 - Baseia-se num modelo Push.
-  
+
+## Instalação e configuração do Ansible para o projeto
+
+Como neste projeto é utilizado o Rocky Linux (versão desenhada para ser 100% compativer com o Red Hat Enterprise Linux) todos as configurações seram para este sistema operativo.
+Se pretendes utilizar soluções emrpesariais aconselho vivamente a utilizares esta versão de Linux. Pode ver os motivos aqui [Rocky](https://rockylinux.org/pt-PT)
+
+### Instalação
+
+
 ... Continua
