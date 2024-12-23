@@ -1,0 +1,14 @@
+version: '3'
+
+volumes:
+  grafana-data:
+    driver: local
+
+  grafana:
+    image: grafana/grafana-oss:latest
+    container_name: EDU_GRAF
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana-data:/var/lib/grafana
+    restart: unless-stopped

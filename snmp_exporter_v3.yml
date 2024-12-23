@@ -1,0 +1,12 @@
+version: '3'
+  
+  snmp:
+    image: quay.io/prometheus/snmp-exporter:latest
+    container_name: EDU_SNMP
+    volumes:
+      - /opt/docker-persist/snmp-exporter:/etc/snmp_exporter
+    ports:
+      - 9116:9116
+      - 116:116/udp
+    restart: always
+    command: --config.file=/etc/snmp_exporter/snmp.yml

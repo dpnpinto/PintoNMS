@@ -1,0 +1,39 @@
+volumes:
+  prometheus-data:
+    driver: local
+  grafana-data:
+    driver: local
+    
+services:
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: EDU_PROM
+    expose:
+      - 9090
+    volumes:
+      - /opt/docker-persist/prometheus:/etc/prometheus
+      - prometheus-data:/prometheus
+    command: --config.file=/etc/prometheus/prometheus.yml
+    restart: unless-stopped
+    
+  snmp:
+    image: quay.io/prometheus/snmp-exporter:latest
+    container_name: EDU_SNMP
+    volumes:
+      - /opt/docker-persist/snmp-exporter:/etc/snmp_exporter
+    expose:
+      - 9116
+    ports:
+      - 116:116/udp
+    restart: always
+    command: --config.file=/etc/snmp_exporter/snmp.yml
+   
+  grafana:
+    image: grafana/grafana-oss:latest
+    container_name: EDU_GRAF
+    ports:
+      - "80:3000"   
+    volumes:
+      - /opt/docker-persist/grafana:/etc/grafana
+      - grafana-data:/var/lib/grafana
+    restart: unless-stopped
