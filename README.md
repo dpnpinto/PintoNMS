@@ -47,7 +47,8 @@ Nota: Sript bash Install_Ansible.sh
 
 - No ficheiro  hosts localizado em /etc/ansible estão configurados os hosts
   - Este ficheiro tem uma estrutura do top
+~~~yaml
 [group_name]
 alias ansible_ssh_host=your_server_ip 
-
+~~~
 ... Continua
