@@ -27,5 +27,6 @@ O Ansible foi desenvolvido em Pyton e utiliza uma linguagem declarativa simples 
 - Desenvolvido pela Red-Hat
 - Baseado em Python
 - Não necessita de um agente
+- Permite gerir servidores e ativos de rede
   
 ... Continua
