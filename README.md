@@ -38,9 +38,11 @@ Se pretendes utilizar soluções emrpesariais aconselho vivamente a utilizares e
 
 ### Instalação do Ansible no Rocky Linux
 
-- sudo dnf update (atualização do sistema operativo)
-- sudo dnf install epel-release (instalação do repositório EPEL "EXtra Packages for Entherprise Linux")
-- sudo dnf install ansible (instalação do ansikble propriamente dito)
+~~~bash
+sudo dnf update #atualização do sistema operativo
+sudo dnf install epel-release #instalação do repositório EPEL "EXtra Packages for Entherprise Linux"
+sudo dnf install ansible #instalação do ansikble propriamente dito
+~~~
 Nota: Sript bash Install_Ansible.sh
 
 ### Configuração do Ansible no Rocky Linux
