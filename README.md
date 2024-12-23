@@ -36,7 +36,11 @@ O Ansible foi desenvolvido em Pyton e utiliza uma linguagem declarativa simples 
 Como neste projeto é utilizado o Rocky Linux (versão desenhada para ser 100% compativer com o Red Hat Enterprise Linux) todos as configurações seram para este sistema operativo.
 Se pretendes utilizar soluções emrpesariais aconselho vivamente a utilizares esta versão de Linux. Pode ver os motivos aqui [Rocky](https://rockylinux.org/pt-PT)
 
-### Instalação
+### Instalação do Ansible no Rocky Linux
 
+- sudo dnf update (atualização do sistema operativo)
+- sudo dnf install epel-release (instalação do repositório EPEL "EXtra Packages for Entherprise Linux")
+- sudo dnf install ansible (instalação do ansikble propriamente dito)
+Nota: Sript bash Install_Ansible.sh
 
 ... Continua
