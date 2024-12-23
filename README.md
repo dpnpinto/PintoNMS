@@ -48,7 +48,8 @@ Nota: Sript bash Install_Ansible.sh
 ### Configuração do Ansible no Rocky Linux
 
 - No ficheiro  hosts localizado em /etc/ansible estão configurados os hosts
-  - Este ficheiro tem uma estrutura do top
+
+Este ficheiro tem uma estrutura do tipo
 ~~~yaml
 [group_name]
 alias ansible_ssh_host=your_server_ip 
