@@ -28,6 +28,6 @@ O Ansible foi desenvolvido em Pyton e utiliza uma linguagem declarativa simples 
 - Baseado em Python;
 - Não necessita de um agente; 
 - Conecta-se via ssh (Secure Shell);
-- Permite gerir servidores e ativos de rede.
+- Permite gerir servidores e ativos de rede (basicamente toda a infraestrutura).
   
 ... Continua
