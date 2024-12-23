@@ -22,4 +22,10 @@ O Ansible foi desenvolvido em Pyton e utiliza uma linguagem declarativa simples 
 - Roles: Uma coleção de módulos e variáveis que encapsulam uma determinada tarefa, como configurar um servidor web;
 - Playbooks: A peça central e fundamental do Ansible, onde são defenidas as tarefas a serem executadas;
 
+## Principais caracteristicas
+
+- Desenvolvido pela Red-Hat
+- Baseado em Python
+- Não necessita de um agente
+  
 ... Continua
