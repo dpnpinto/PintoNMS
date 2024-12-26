@@ -53,7 +53,6 @@ sudo dnf install epel-release #instalação do repositório EPEL "EXtra Packages
 sudo dnf install ansible #instalação do ansikble propriamente dito
 
 # Python's package manager:
-
 pip install --user ansible
 # ou
 sudo pip install ansible
