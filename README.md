@@ -38,12 +38,34 @@ Se pretendes utilizar soluções emrpesariais aconselho vivamente a utilizares e
 
 ### Instalação do Ansible no Rocky Linux
 
+A instalação de pacotes Python via yum/dnf geralmente não é aconselhada, a menos que haja alguma dependência nativa. Não há benefícios em instalar utilizando yum/dnf em vez de pip.
+Normalmente, é recomendado evitar a tulização de gestor de pacotes globais para instalar pacotes do Python. As únicas exceções que normalmente são feitas são para pacotes verdadeiramente globais (pip, wheel, setuptools, CLI de fornecedor de nuvem, virtualenv). Também é utilizado este metodo método ao configurar ambientes Docker, pois o Docker é limitado a configurações de sistemas únicos. Normalmente, é evitado este método porque confiar em livrarias Python fornecidos pelo sistema operacional pode ser complicado. Por exemplo, o CentOS 6 veio com uma versão muito antiga do Python que não podia ser atualizada, pelo que teve de compilar e construir o Python a partir das fontes. Este método também não funciona se tivermos várias aplicações que precisam de ser executadas no mesmo servidor, mas têm diferentes requisitos de versões do Python.
+
+Utilizar um ambiente virtual é quase sempre a escolha certa e deve ser a escolha padrão. Isola as dependências dos projetos de outros que possam residir na mesma máquina virtual ou computador fisico. A palavra-chave aqui é isolamento. Pode isolar versões específicas de bibliotecas e Python que são específicas de determinadas aplicações e executá-las lado a lado na mesma instância, sem ter problemas.
+
+Utiliza-se o pip install a partir do Git quando for encessário uma correção específica ou de um recurso que ainda não foi lançado no PyPI.
+
+Ficam aqui todas as possibildaides de instalação:
 ~~~bash
+# System's package manager:
 sudo dnf update #atualização do sistema operativo
 sudo dnf install epel-release #instalação do repositório EPEL "EXtra Packages for Entherprise Linux"
 sudo dnf install ansible #instalação do ansikble propriamente dito
+
+# Python's package manager:
+
+pip install --user ansible
+# ou
+sudo pip install ansible
+
+# Python's package manager in a virtual environment:
+python -m virtualenv ansible
+source ansible/bin/activate
+pip install ansible
+
+# Git by cloning the source code from the repository:
+git clone https://github.com/ansible/ansible.git
 ~~~
-Nota: Sript bash Install_Ansible.sh
 
 ### Configuração do Ansible no Rocky Linux
 
