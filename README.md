@@ -45,7 +45,7 @@ Utilizar um ambiente virtual é quase sempre a escolha certa e deve ser a escolh
 
 Utiliza-se o pip install a partir do Git quando for encessário uma correção específica ou de um recurso que ainda não foi lançado no PyPI.
 
-Ficam aqui todas as possibildaides de instalação:
+Ficam aqui todas as opções de instalação:
 ~~~bash
 # System's package manager:
 sudo dnf update #atualização do sistema operativo
@@ -83,3 +83,4 @@ host2 ansible_ssh_host=203.0.113.112
 host3 ansible_ssh_host=203.0.113.113
 ~~~
 ... Continua
+
